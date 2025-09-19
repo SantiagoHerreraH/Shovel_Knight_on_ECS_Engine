@@ -109,9 +109,9 @@ Collectibles
 ## Getting Started
 Detailed instructions on how to run your game project are in this section.
 
-### Prerequisites
+### Prerequisites For Playing
 
-* Visual Studio 2022
+* Windows
 
 ### How to play the project
 
