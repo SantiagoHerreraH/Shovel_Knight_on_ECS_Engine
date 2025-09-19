@@ -49,27 +49,23 @@
 
 ![image](https://github.com/HowestDAE/dae14-SantiagoHerreraH/assets/129545544/4af91401-7be0-41e1-b956-79dc5662edc1)
 
-Here's why:
-TODO: describe why you chose this game 
-* Sprites available
-* Adheres to features solicited by the subject
+Why I chose the game 
+* effective gameplay that requires systems that I want to build
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## My version
 
-This section gives a clear and detailed overview of which parts of the original game I planned to make.
-
-### The minimum I will most certainly develop:
+### Gameplay Features:
 First Level without the boss fight:
 
 Content
 
 AI
-* Slime enemy
-* Big Dragon enemy
-* Small Dragon enemy
+* Beetle enemy
+* Blorb
+* Dive Drake
 
 Level
 * First Level
@@ -83,16 +79,14 @@ Collectibles
 * Life
 * Gold
 
-Systems For the Content 
+### Game Engine Features:
 
-Already Made: (some just need tweaking but all of them are already functioning))
 * Entity Component System
 * Dynamic Iterator System
 * Scene Graph
-* Event Graph
-* State Graph/Machine (functioning, but functionality will need to be added in the future)
+* Event Queue
+* State Graph
 * Movement System
-* Matrix Transform System (the framework that was given has this implemented, but I made my own before receiving the framework)
 * Camara System
 * Collision System
 * Physics System
@@ -101,44 +95,12 @@ Already Made: (some just need tweaking but all of them are already functioning))
 * Vector Math and Collision Math -> implemented my own before being given one
 * Modified Texture System -> slightly modified the given framework texture system to allow for dynamic references to textures
 * Creation System (a more organized way of creating entities in world, managing component coupling and providing string identification for each group of components, which will make creatiing an editor easier)
-
-Systems that need testing but are already implemented:
 * Animation System
 * Parallax System
-
-Systems to be Made
-* Projectile System
-* Expanding the Event and State System via introducing more events and more actions to execute upon reacting to those events -> basically, just expanding the state machine for the AI
 * Destructible terrain System
+* Screen Culling so only the objects inside screen view are activated
+* Level Reader that reads pixel data in images and creates a level based on tile sheet rules
 
-Details to Iron out if there is time
-* There are a bunch of optimizations I can do in my ECS, some of them being:
-* Refreshing dynamic iterators only when memory is moved and not with every creation of components. For the time being, this is not a big issue since all of my allocation happens upon initialization. For a bigger game, I understand this would an issue
-* Removing unnecesary archetypes so they don't take space in memory
-* Giving the option to refresh the dynamic iterators manually. This would require a whole restructuring of my ECS, which is out of scope for this project. At least now I know how to do a better ECS next time. 
-
-### What I will probably make as well:
-AI
-* Skeleton enemy
-
-Scenes
-* Cut Scenes at the beginning of a level
-
-UI
-* Basic implementation of the UI, including:
-* Narrowed main menu with no character selection and no world map
-* Basic features like audio regulation and pause and play 
-
-"Particle System"
-* The part of Shovel Knight I am going to reproduce doesn't really have particles, it's just reacting sprites upon certain events
-
-### What I plan to create if I have enough time left:
-AI
-* Final Boss
-
-Systems
-* Editor System
-* Save System
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -149,26 +111,25 @@ Detailed instructions on how to run your game project are in this section.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
 * Visual Studio 2022
 
-### How to run the project
+### How to play the project
 
-Explain which project (version) must be run.
-* any extra steps if required 
+* Download the project from the repo
+* Go to Build folder
+* click on 1DAE14_GameProject_SantiagoHerreraHuerta.exe
+* Wait a bit for the project to load
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 <!-- HOW TO PLAY -->
-## How to play
-
-Use this space to show useful examples of how a game can be played. 
-Additional screenshots and demos work well in this space. 
 
 ### Controls
-* WASD to move
+* AD to move horizontally 
+* SPACE to jump
+* S while on air is shovel down
+* J to shovel horizontally
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -178,7 +139,7 @@ Additional screenshots and demos work well in this space.
 ## Class structure 
 
 Overall structure of my systems:
-- Registry contains things known as components.
+- Registry contains components.
 - Components can be linked and referenced through and Entity
 - Component Iterator allows for iteration over components that meet certain linkage criteria
 - Systems iterate over the components, transforming them in the process
@@ -293,30 +254,11 @@ Systems that need testing but are already implemented:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- CHECKLIST -->
-## Checklist
-
-- [x] Accept / set up github project
-- [x] week 01 topics applied
-    - [x] const keyword applied proactively (variables, functions,..)
-    - [x] static keyword applied proactively (class variables, static functions,..)
-    - [x] object composition (optional)
-- [x] week 02 topics applied
-- [x] week 03 topics applied
-- [x] week 04 topics applied
-- [x] week 05 topics applied
-- [x] week 06 topics applied
-- [x] week 07 topics applied
-- [x] week 08 topics applied
-- [x] week 09 topics applied (optional)
-- [x] week 10 topics applied (optional)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- CONTACT -->
 ## Contact
 
-Your Name - email@student.howest.be
+Santiago Herrera Huerta
+santi.herrerah.h@gmail.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
@@ -332,7 +274,7 @@ Use this space to list resources you find helpful and would like to give credit 
 * https://gameprogrammingpatterns.com/ -> Also buy the book if you can, it's good
 * https://refactoring.guru/ <- gives you a good intution for pattern structure. I find it very liberating to think about structure and code execution principles instead of a rigid implementation. 
 * [Example 1: cpp reference on std::vector](https://en.cppreference.com/w/cpp/container/vector)
-* ..
+* Of course Shovel Knight gameplay as reference
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
