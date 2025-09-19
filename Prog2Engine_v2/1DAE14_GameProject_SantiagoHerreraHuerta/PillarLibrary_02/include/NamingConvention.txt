@@ -1,0 +1,5 @@
+DName -> used for type aliases. D stands for Defined. I do this because the type alias is meant for conceptual and contextual clarification
+FName -> used for plain structs
+UName -> used for plain classes
+SName -> used for static classes
+TName -> used for container-type classes

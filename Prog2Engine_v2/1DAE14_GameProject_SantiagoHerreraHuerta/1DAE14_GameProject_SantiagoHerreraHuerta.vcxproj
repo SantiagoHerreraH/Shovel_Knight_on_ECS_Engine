@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5c83e7b1-04c2-449e-8dfd-9f37282c82c0}</ProjectGuid>
+    <RootNamespace>_1DAE14_GameProject_SantiagoHerreraHuerta</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)\Libraries\SDLTtf\SDL2_ttf-2.20.2\include;$(SolutionDir)\Libraries\SDLMixer\SDL2_mixer-2.6.3\include;$(SolutionDir)\Libraries\SDLImage\SDL2_image-2.6.3\include;$(SolutionDir)\Libraries\SDLMain\SDL2-2.26.3\include;$(SolutionDir)\Engine;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\x64\Debug;$(SolutionDir)\Libraries\SDLTtf\SDL2_ttf-2.20.2\lib\x64;$(SolutionDir)\Libraries\SDLMixer\SDL2_mixer-2.6.3\lib\x64;$(SolutionDir)\Libraries\SDLImage\SDL2_image-2.6.3\lib\x64;$(SolutionDir)\Libraries\SDLMain\SDL2-2.26.3\lib\x64;$(LibraryPath)</LibraryPath>
+    <CustomBuildAfterTargets>BuildCompile</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Message>Copying dll files to executable</Message>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)Libraries\SDLMain\SDL2-2.26.3\lib\x64\*.dll" "$(TargetDir)" /y /d
+xcopy "$(SolutionDir)Libraries\SDLImage\SDL2_image-2.6.3\lib\x64\*.dll" "$(TargetDir)" /y /d
+xcopy "$(SolutionDir)Libraries\SDLMixer\SDL2_mixer-2.6.3\lib\x64\*.dll" "$(TargetDir)" /y /d
+xcopy "$(SolutionDir)Libraries\SDLTtf\SDL2_ttf-2.20.2\lib\x64\*.dll" "$(TargetDir)" /y /d
+xcopy "$(SolutionDir)Resources\*.*" "$(TargetDir)" /y /d /s</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Core\UArchetypeRegistry.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Core\UComponentIteratorRegistry.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Core\UComponentFilter.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Core\UComponentHandleRegistry.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Core\UEntityCreation.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Core\UEntityHandle.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Core\UEntityHandleContainer.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Core\UEntityHandleRegistry.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Core\UInternalFilter.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Core\URegistry.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Game\UPillarGame.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Objects\FCoordinateHasher.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Objects\UGrid.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\CollisionSystems\SCollision.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\CollisionSystems\UCollision.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\CollisionSystems\URectCollision.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\CollisionSystems\UShapeCollision.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\SCreation.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\UComponentBlockParams.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\UCreateComponentParamTemplates.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\UCreateComponents.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\UCreateMenu.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\UCreateTreasures.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\UCreateEntities.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\UCreatePlayer.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\UCreateWorld.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\ULoadTextures.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\UParameterConverter.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\CurveSystems\UCurveSystem.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\CurveSystems\USplineSystem.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\DebugSystems\UDebug.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\DrawingSystems\UAnimation.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\DrawingSystems\UDraw.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\DrawingSystems\USprite.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\DrawingSystems\UTexture.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\EventSystems\SEventNames.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\EventSystems\UEventRegistry.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\EventSystems\UEventManager.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\EventSystems\UEventChecks.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\InputSystems\UInputSystem.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\InteractionSystems\UInteractionSystem.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\MathSystems\SAngles.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\MathSystems\SGeometry.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\MathSystems\SMatrix.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\MathSystems\STools.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\MathSystems\STrigonometry.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\MathSystems\SVectors.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\MovementSystems\UHoningSystem.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\MovementSystems\UMovement.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\MovementSystems\UMovementData.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\OptimizationSystems\UOptimization.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\PhysicsSystems\UPhysics.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\SceneSystems\USceneGraph.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\SoundSystems\USound.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\StateSystems\UpdateStateSystems3.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\StateSystems\UStateCondition.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\StateSystems\UpdateStateSystems.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\StateSystems\UpdateStateSystems2.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\StateSystems\UStateMachine.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\TransformSystems\UCameraTransformer.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\TransformSystems\UMatrixTransformer.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\TransformSystems\URealTransform2DModifier.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\TransformSystems\UShapeTransformer2D.cpp" />
+    <ClCompile Include="PillarLibrary_02\source\Systems\TransformSystems\USpawnPointManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\FEntity.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\IComponentIterator.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\IComponentHandleManager.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\UArchetypeRegistry.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\UComponentCompartment.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\UComponentIterator.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\UComponentIteratorManager.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\UComponentIteratorRegistry.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\UComponentFilter.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\UComponentHandle.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\UComponentHandleManager.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\UComponentHandleRegistry.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\UEntityCreation.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\UEntityHandle.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\UEntityHandleContainer.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\UEntityHandleContainerRegistry.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\UEntityHandleRegistry.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\UInternalFilter.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\URegistry.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\URegistrySingleton.h" />
+    <ClInclude Include="PillarLibrary_02\include\Core\URegistrySingletonArray.h" />
+    <ClInclude Include="PillarLibrary_02\include\Game\UPillarGame.h" />
+    <ClInclude Include="PillarLibrary_02\include\InternalIncludes.h" />
+    <ClInclude Include="PillarLibrary_02\include\Objects\FCoordinateHasher.h" />
+    <ClInclude Include="PillarLibrary_02\include\Objects\UGrid.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FCamera.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FCollision.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FColor.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FCurve.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FDrawFrame.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FInput.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FLevelPartition.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FLife.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FMatrix.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FMesh.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FMovement.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FObjectCollision.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FOptimization.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FPhysics.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FPlayer.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FSceneGraphStructure.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FShape.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FState.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FTag.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FTransform.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FVector.h" />
+    <ClInclude Include="PillarLibrary_02\include\Structs\FWindow.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\CollisionSystems\SCollision.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\CollisionSystems\UCollision.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\CollisionSystems\URectCollision.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\CollisionSystems\UShapeCollision.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\SCreation.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\UComponentBlockParams.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\UCreateComponentParamTemplates.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\UCreateComponents.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\UCreateMenu.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\UCreateTreasures.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\UCreateEntities.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\UCreatePlayer.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\UCreateWorld.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\ULoadTextures.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\UParameterConverter.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\CurveSystems\UCurveSystem.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\CurveSystems\USplineSystem.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\DebugSystems\UDebug.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\DrawSystems\UAnimation.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\DrawSystems\UDraw.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\DrawSystems\USprite.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\DrawSystems\UTexture.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\EventSystems\SEventNames.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\EventSystems\UEventRegistry.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\EventSystems\UEventManager.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\EventSystems\UEventChecks.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\InputSystems\UInputSystem.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\LifeSystems\UInteractionSystem.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\MathSystems\SAngles.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\MathSystems\SGeometry.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\MathSystems\SMatrix.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\MathSystems\STools.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\MathSystems\STrigonometry.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\MathSystems\SVectors.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\MovementSystems\UHoningSystem.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\MovementSystems\UMovement.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\MovementSystems\UMovementData.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\OptimizationSystems\UOptimization.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\PhysicsSystems\UPhysics.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\SceneSystems\USceneGraph.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\SoundSystems\USound.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\StateSystems\UpdateStateSystems3.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\StateSystems\UStateCondition.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\StateSystems\UpdateStateSystems.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\StateSystems\UpdateStateSystems2.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\StateSystems\UStateControllerGraph.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\StateSystems\UStateControllerManager.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\StateSystems\UStateMachine.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\StateSystems\UStateController.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\TemplateSystems\TActivatableFlatMap.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\TemplateSystems\TReferencedVector.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\TemplateSystems\TUnorderedVector.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\TemplateSystems\TActivatableVector.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\TemplateSystems\USortedVector.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\TransformSystems\UCameraTransformer.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\TransformSystems\UMatrixTransformer.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\TransformSystems\URealTransform2D.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\TransformSystems\URealTransform2DModifier.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\TransformSystems\UShapeTransformer2D.h" />
+    <ClInclude Include="PillarLibrary_02\include\Systems\TransformSystems\USpawnPointManager.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup>
+    <LocalDebuggerWorkingDirectory>$(TargetDir)</LocalDebuggerWorkingDirectory>
+  </PropertyGroup>
+</Project>

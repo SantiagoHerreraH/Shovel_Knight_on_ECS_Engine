@@ -1,0 +1,641 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GameFiles">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="MainAndPCH">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="PillarLibrary">
+      <UniqueIdentifier>{d6d1c757-4c00-45ca-bafd-5fbc0fadfde1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Core">
+      <UniqueIdentifier>{cd8012e6-8931-4bb1-9ea0-8266f4f8fb50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Core\ArchetypeRegistry">
+      <UniqueIdentifier>{26d539ad-d075-4df9-830e-9bfcc21e3d54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Core\ComponentHandle">
+      <UniqueIdentifier>{151d3e52-cdf0-4164-bcbf-86070c289686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Core\Entity">
+      <UniqueIdentifier>{d776867b-455b-4f47-ba9d-e520fc5b4eee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Core\Filters">
+      <UniqueIdentifier>{e2d83473-5d33-46e4-a766-e0b537e4fa1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Core\Registry">
+      <UniqueIdentifier>{d19ce181-1e10-43c5-b85e-6396ec9078be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Core\RegistryTools">
+      <UniqueIdentifier>{0e92a498-e786-46e4-8ab1-5653b9276ec1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Core\Interfaces">
+      <UniqueIdentifier>{a3edbf83-95b6-4e80-8fe0-0d2cc6ef5c78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Game">
+      <UniqueIdentifier>{91d1e6ec-3adb-4fc3-841d-9537254c2164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems">
+      <UniqueIdentifier>{97897ab3-f56c-4273-a728-21a082bea815}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems\CreationSystems">
+      <UniqueIdentifier>{1b03f41f-7480-48c2-b9f3-795908f63b45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems\EventSystems">
+      <UniqueIdentifier>{f2dcf28b-a615-4694-8c25-9be3ae32499c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems\MovementSystems">
+      <UniqueIdentifier>{54f2752c-ca34-4c57-a86d-71c4ad0d5916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems\CollisionSystems">
+      <UniqueIdentifier>{58336627-9475-49df-9f32-c3436597ee5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems\MathSystems">
+      <UniqueIdentifier>{3922589e-f379-4bf3-8b0c-0861dcd26864}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems\TransformSystems">
+      <UniqueIdentifier>{869849de-2194-4c8a-9ca0-5aaa06f8ab5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems\SceneSystems">
+      <UniqueIdentifier>{5f57a6e5-5d6b-420b-840c-2b7c4af4dea3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems\PhysicsSystem">
+      <UniqueIdentifier>{4e484ade-f12a-4d80-ac44-d81ac68c7801}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems\Objects">
+      <UniqueIdentifier>{3339e3b4-34f9-42df-86d3-befad1548648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems\DrawingSystems">
+      <UniqueIdentifier>{0cadcce3-3dce-4fad-ad89-26a013740f7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Structs">
+      <UniqueIdentifier>{2c977c67-ced3-48e0-8654-0a234b64d7a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems\TemplateSystems">
+      <UniqueIdentifier>{5bc46223-9cc9-438c-96f6-342c3f0c7a1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems\Debug">
+      <UniqueIdentifier>{16d29fcb-a41f-457f-a8aa-c2d649b14658}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems\CreationSystems\EditorParams">
+      <UniqueIdentifier>{2e486321-6452-4f10-8e8e-c11712221da3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems\CurveSystems">
+      <UniqueIdentifier>{94497479-286b-4db5-972a-3ec864682fb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems\InputSystems">
+      <UniqueIdentifier>{9b6b0728-8247-4eca-aed4-a3e472f24d68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems\StateSystems">
+      <UniqueIdentifier>{75130e35-c0eb-470b-8a81-65c7873127d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Core\ComponentIterator">
+      <UniqueIdentifier>{34614016-c5ba-4ad2-827a-7887ed290673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems\InteractionSystems">
+      <UniqueIdentifier>{e35fb810-0c45-458f-b6fb-06440a87d4f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems\OptimizationSystems">
+      <UniqueIdentifier>{7477b0f8-9025-4e6a-878c-74a6daaa3bf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PillarLibrary\Systems\SoundSystems">
+      <UniqueIdentifier>{2e743344-e79f-4bcc-8797-6ff6f8e8d9bc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp">
+      <Filter>GameFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>MainAndPCH</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>MainAndPCH</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Core\UArchetypeRegistry.cpp">
+      <Filter>PillarLibrary\Core\ArchetypeRegistry</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Core\UComponentIteratorRegistry.cpp">
+      <Filter>PillarLibrary\Core\ComponentIterator</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Core\UComponentHandleRegistry.cpp">
+      <Filter>PillarLibrary\Core\ComponentHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Core\UEntityCreation.cpp">
+      <Filter>PillarLibrary\Core\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Core\UEntityHandle.cpp">
+      <Filter>PillarLibrary\Core\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Core\UEntityHandleContainer.cpp">
+      <Filter>PillarLibrary\Core\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Core\UEntityHandleRegistry.cpp">
+      <Filter>PillarLibrary\Core\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Core\UComponentFilter.cpp">
+      <Filter>PillarLibrary\Core\Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Core\UInternalFilter.cpp">
+      <Filter>PillarLibrary\Core\Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Core\URegistry.cpp">
+      <Filter>PillarLibrary\Core\Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\UCreateComponents.cpp">
+      <Filter>PillarLibrary\Systems\CreationSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\UCreateEntities.cpp">
+      <Filter>PillarLibrary\Systems\CreationSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\UCreateWorld.cpp">
+      <Filter>PillarLibrary\Systems\CreationSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\EventSystems\UEventRegistry.cpp">
+      <Filter>PillarLibrary\Systems\EventSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\EventSystems\UEventManager.cpp">
+      <Filter>PillarLibrary\Systems\EventSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\MovementSystems\UHoningSystem.cpp">
+      <Filter>PillarLibrary\Systems\MovementSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\MovementSystems\UMovement.cpp">
+      <Filter>PillarLibrary\Systems\MovementSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\MovementSystems\UMovementData.cpp">
+      <Filter>PillarLibrary\Systems\MovementSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\CollisionSystems\SCollision.cpp">
+      <Filter>PillarLibrary\Systems\CollisionSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\CollisionSystems\UCollision.cpp">
+      <Filter>PillarLibrary\Systems\CollisionSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\CollisionSystems\UShapeCollision.cpp">
+      <Filter>PillarLibrary\Systems\CollisionSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\PhysicsSystems\UPhysics.cpp">
+      <Filter>PillarLibrary\Systems\PhysicsSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\MathSystems\SAngles.cpp">
+      <Filter>PillarLibrary\Systems\MathSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\MathSystems\SGeometry.cpp">
+      <Filter>PillarLibrary\Systems\MathSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\MathSystems\SMatrix.cpp">
+      <Filter>PillarLibrary\Systems\MathSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\MathSystems\STools.cpp">
+      <Filter>PillarLibrary\Systems\MathSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\MathSystems\STrigonometry.cpp">
+      <Filter>PillarLibrary\Systems\MathSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\MathSystems\SVectors.cpp">
+      <Filter>PillarLibrary\Systems\MathSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\TransformSystems\UCameraTransformer.cpp">
+      <Filter>PillarLibrary\Systems\TransformSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\TransformSystems\URealTransform2DModifier.cpp">
+      <Filter>PillarLibrary\Systems\TransformSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\TransformSystems\UMatrixTransformer.cpp">
+      <Filter>PillarLibrary\Systems\TransformSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\TransformSystems\UShapeTransformer2D.cpp">
+      <Filter>PillarLibrary\Systems\TransformSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\SceneSystems\USceneGraph.cpp">
+      <Filter>PillarLibrary\Systems\SceneSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Game\UPillarGame.cpp">
+      <Filter>PillarLibrary\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Objects\FCoordinateHasher.cpp">
+      <Filter>PillarLibrary\Systems\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\DrawingSystems\UDraw.cpp">
+      <Filter>PillarLibrary\Systems\DrawingSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\DrawingSystems\UTexture.cpp">
+      <Filter>PillarLibrary\Systems\DrawingSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\DrawingSystems\UAnimation.cpp">
+      <Filter>PillarLibrary\Systems\DrawingSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\DebugSystems\UDebug.cpp">
+      <Filter>PillarLibrary\Systems\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\UComponentBlockParams.cpp">
+      <Filter>PillarLibrary\Systems\CreationSystems\EditorParams</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\UCreateComponentParamTemplates.cpp">
+      <Filter>PillarLibrary\Systems\CreationSystems\EditorParams</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\UParameterConverter.cpp">
+      <Filter>PillarLibrary\Systems\CreationSystems\EditorParams</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\CurveSystems\UCurveSystem.cpp">
+      <Filter>PillarLibrary\Systems\CurveSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\CurveSystems\USplineSystem.cpp">
+      <Filter>PillarLibrary\Systems\CurveSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\InputSystems\UInputSystem.cpp">
+      <Filter>PillarLibrary\Systems\InputSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Objects\UGrid.cpp">
+      <Filter>PillarLibrary\Systems\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\StateSystems\UStateMachine.cpp">
+      <Filter>PillarLibrary\Systems\StateSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\EventSystems\UEventChecks.cpp">
+      <Filter>PillarLibrary\Systems\EventSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\DrawingSystems\USprite.cpp">
+      <Filter>PillarLibrary\Systems\DrawingSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\EventSystems\SEventNames.cpp">
+      <Filter>PillarLibrary\Systems\EventSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\StateSystems\UpdateStateSystems.cpp">
+      <Filter>PillarLibrary\Systems\StateSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\UCreatePlayer.cpp">
+      <Filter>PillarLibrary\Systems\CreationSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\UCreateTreasures.cpp">
+      <Filter>PillarLibrary\Systems\CreationSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\SCreation.cpp">
+      <Filter>PillarLibrary\Systems\CreationSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\StateSystems\UpdateStateSystems2.cpp">
+      <Filter>PillarLibrary\Systems\StateSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\ULoadTextures.cpp">
+      <Filter>PillarLibrary\Systems\CreationSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\InteractionSystems\UInteractionSystem.cpp">
+      <Filter>PillarLibrary\Systems\InteractionSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\StateSystems\UStateCondition.cpp">
+      <Filter>PillarLibrary\Systems\StateSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\CollisionSystems\URectCollision.cpp">
+      <Filter>PillarLibrary\Systems\CollisionSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\OptimizationSystems\UOptimization.cpp">
+      <Filter>PillarLibrary\Systems\OptimizationSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\TransformSystems\USpawnPointManager.cpp">
+      <Filter>PillarLibrary\Systems\TransformSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\StateSystems\UpdateStateSystems3.cpp">
+      <Filter>PillarLibrary\Systems\StateSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\CreationSystems\UCreateMenu.cpp">
+      <Filter>PillarLibrary\Systems\CreationSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarLibrary_02\source\Systems\SoundSystems\USound.cpp">
+      <Filter>PillarLibrary\Systems\SoundSystems</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>GameFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>MainAndPCH</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\UArchetypeRegistry.h">
+      <Filter>PillarLibrary\Core\ArchetypeRegistry</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\IComponentIterator.h">
+      <Filter>PillarLibrary\Core\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\IComponentHandleManager.h">
+      <Filter>PillarLibrary\Core\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\UComponentIterator.h">
+      <Filter>PillarLibrary\Core\ComponentIterator</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\UComponentIteratorManager.h">
+      <Filter>PillarLibrary\Core\ComponentIterator</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\UComponentIteratorRegistry.h">
+      <Filter>PillarLibrary\Core\ComponentIterator</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\UComponentHandle.h">
+      <Filter>PillarLibrary\Core\ComponentHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\UComponentHandleManager.h">
+      <Filter>PillarLibrary\Core\ComponentHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\UComponentHandleRegistry.h">
+      <Filter>PillarLibrary\Core\ComponentHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\FEntity.h">
+      <Filter>PillarLibrary\Core\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\UEntityCreation.h">
+      <Filter>PillarLibrary\Core\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\UEntityHandle.h">
+      <Filter>PillarLibrary\Core\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\UEntityHandleContainer.h">
+      <Filter>PillarLibrary\Core\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\UEntityHandleContainerRegistry.h">
+      <Filter>PillarLibrary\Core\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\UEntityHandleRegistry.h">
+      <Filter>PillarLibrary\Core\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\UComponentFilter.h">
+      <Filter>PillarLibrary\Core\Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\UInternalFilter.h">
+      <Filter>PillarLibrary\Core\Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\UComponentCompartment.h">
+      <Filter>PillarLibrary\Core\Registry</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\URegistry.h">
+      <Filter>PillarLibrary\Core\Registry</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\URegistrySingleton.h">
+      <Filter>PillarLibrary\Core\RegistryTools</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Core\URegistrySingletonArray.h">
+      <Filter>PillarLibrary\Core\RegistryTools</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\UCreateComponents.h">
+      <Filter>PillarLibrary\Systems\CreationSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\UCreateEntities.h">
+      <Filter>PillarLibrary\Systems\CreationSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\UCreateWorld.h">
+      <Filter>PillarLibrary\Systems\CreationSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\EventSystems\UEventRegistry.h">
+      <Filter>PillarLibrary\Systems\EventSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\EventSystems\UEventManager.h">
+      <Filter>PillarLibrary\Systems\EventSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\MovementSystems\UHoningSystem.h">
+      <Filter>PillarLibrary\Systems\MovementSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\MovementSystems\UMovement.h">
+      <Filter>PillarLibrary\Systems\MovementSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\MovementSystems\UMovementData.h">
+      <Filter>PillarLibrary\Systems\MovementSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\PhysicsSystems\UPhysics.h">
+      <Filter>PillarLibrary\Systems\PhysicsSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\CollisionSystems\SCollision.h">
+      <Filter>PillarLibrary\Systems\CollisionSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\MathSystems\SAngles.h">
+      <Filter>PillarLibrary\Systems\MathSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\MathSystems\SGeometry.h">
+      <Filter>PillarLibrary\Systems\MathSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\MathSystems\SMatrix.h">
+      <Filter>PillarLibrary\Systems\MathSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\MathSystems\STools.h">
+      <Filter>PillarLibrary\Systems\MathSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\MathSystems\STrigonometry.h">
+      <Filter>PillarLibrary\Systems\MathSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\MathSystems\SVectors.h">
+      <Filter>PillarLibrary\Systems\MathSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\SceneSystems\USceneGraph.h">
+      <Filter>PillarLibrary\Systems\SceneSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\TransformSystems\UCameraTransformer.h">
+      <Filter>PillarLibrary\Systems\TransformSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\TransformSystems\UMatrixTransformer.h">
+      <Filter>PillarLibrary\Systems\TransformSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\TransformSystems\URealTransform2D.h">
+      <Filter>PillarLibrary\Systems\TransformSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\TransformSystems\URealTransform2DModifier.h">
+      <Filter>PillarLibrary\Systems\TransformSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\TransformSystems\UShapeTransformer2D.h">
+      <Filter>PillarLibrary\Systems\TransformSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\InternalIncludes.h">
+      <Filter>PillarLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\CollisionSystems\UShapeCollision.h">
+      <Filter>PillarLibrary\Systems\CollisionSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\CollisionSystems\UCollision.h">
+      <Filter>PillarLibrary\Systems\CollisionSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Game\UPillarGame.h">
+      <Filter>PillarLibrary\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Objects\FCoordinateHasher.h">
+      <Filter>PillarLibrary\Systems\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\DrawSystems\UDraw.h">
+      <Filter>PillarLibrary\Systems\DrawingSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FCamera.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FCollision.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FColor.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FCurve.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FLevelPartition.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FMatrix.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FMesh.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FMovement.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FObjectCollision.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FPhysics.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FPlayer.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FSceneGraphStructure.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FShape.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FTransform.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FVector.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FDrawFrame.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\DrawSystems\UTexture.h">
+      <Filter>PillarLibrary\Systems\DrawingSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\DrawSystems\UAnimation.h">
+      <Filter>PillarLibrary\Systems\DrawingSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\TemplateSystems\TUnorderedVector.h">
+      <Filter>PillarLibrary\Systems\TemplateSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\TemplateSystems\USortedVector.h">
+      <Filter>PillarLibrary\Systems\TemplateSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\TemplateSystems\TReferencedVector.h">
+      <Filter>PillarLibrary\Systems\TemplateSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\TemplateSystems\TActivatableVector.h">
+      <Filter>PillarLibrary\Systems\TemplateSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\DebugSystems\UDebug.h">
+      <Filter>PillarLibrary\Systems\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\UComponentBlockParams.h">
+      <Filter>PillarLibrary\Systems\CreationSystems\EditorParams</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\UCreateComponentParamTemplates.h">
+      <Filter>PillarLibrary\Systems\CreationSystems\EditorParams</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\UParameterConverter.h">
+      <Filter>PillarLibrary\Systems\CreationSystems\EditorParams</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\CurveSystems\UCurveSystem.h">
+      <Filter>PillarLibrary\Systems\CurveSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\CurveSystems\USplineSystem.h">
+      <Filter>PillarLibrary\Systems\CurveSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\InputSystems\UInputSystem.h">
+      <Filter>PillarLibrary\Systems\InputSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FWindow.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Objects\UGrid.h">
+      <Filter>PillarLibrary\Systems\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FInput.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\StateSystems\UStateMachine.h">
+      <Filter>PillarLibrary\Systems\StateSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\StateSystems\UStateController.h">
+      <Filter>PillarLibrary\Systems\StateSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\EventSystems\UEventChecks.h">
+      <Filter>PillarLibrary\Systems\EventSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\DrawSystems\USprite.h">
+      <Filter>PillarLibrary\Systems\DrawingSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\StateSystems\UStateControllerGraph.h">
+      <Filter>PillarLibrary\Systems\StateSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\TemplateSystems\TActivatableFlatMap.h">
+      <Filter>PillarLibrary\Systems\TemplateSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\EventSystems\SEventNames.h">
+      <Filter>PillarLibrary\Systems\EventSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\StateSystems\UpdateStateSystems.h">
+      <Filter>PillarLibrary\Systems\StateSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FLife.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\LifeSystems\UInteractionSystem.h">
+      <Filter>PillarLibrary\Systems\InteractionSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\UCreatePlayer.h">
+      <Filter>PillarLibrary\Systems\CreationSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FState.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\StateSystems\UStateControllerManager.h">
+      <Filter>PillarLibrary\Systems\StateSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\UCreateTreasures.h">
+      <Filter>PillarLibrary\Systems\CreationSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\SCreation.h">
+      <Filter>PillarLibrary\Systems\CreationSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\StateSystems\UpdateStateSystems2.h">
+      <Filter>PillarLibrary\Systems\StateSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\ULoadTextures.h">
+      <Filter>PillarLibrary\Systems\CreationSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FTag.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\StateSystems\UStateCondition.h">
+      <Filter>PillarLibrary\Systems\StateSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\CollisionSystems\URectCollision.h">
+      <Filter>PillarLibrary\Systems\CollisionSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\OptimizationSystems\UOptimization.h">
+      <Filter>PillarLibrary\Systems\OptimizationSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Structs\FOptimization.h">
+      <Filter>PillarLibrary\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\TransformSystems\USpawnPointManager.h">
+      <Filter>PillarLibrary\Systems\TransformSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\StateSystems\UpdateStateSystems3.h">
+      <Filter>PillarLibrary\Systems\StateSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\CreationSystems\UCreateMenu.h">
+      <Filter>PillarLibrary\Systems\CreationSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarLibrary_02\include\Systems\SoundSystems\USound.h">
+      <Filter>PillarLibrary\Systems\SoundSystems</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
